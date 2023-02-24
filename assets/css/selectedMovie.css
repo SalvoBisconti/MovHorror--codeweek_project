@@ -1,0 +1,277 @@
+@font-face {
+  font-family: horrorFont;
+  src: url(../font/die.ttf);
+}
+@font-face {
+  font-family: zombie;
+  src: url(./font/zombie.ttf);
+}
+@font-face {
+  font-family: overviewfont;
+  src: url(../font/overview.ttf);
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgba(21, 20, 20, 0.946);
+  color: whitesmoke;
+  font-family: horrorFont;
+  font-size: 1.2rem;
+}
+
+.header {
+  background-color: rgba(24, 23, 23, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  z-index: 5;
+  padding-left: 20px;
+}
+.nav-active {
+  background-color: rgb(24, 23, 23);
+}
+.nav-link-element:hover {
+  background-color: rgba(89, 89, 89, 0.223);
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+.left-nav-div ul {
+  display: flex;
+  list-style-type: none;
+  align-items: end;
+  padding: 0;
+  gap: 20px;
+}
+.logo {
+  width: 120px;
+}
+.overlay {
+  position: absolute;
+  background-color: rgba(23, 22, 22, 0.691);
+  height: 100%;
+  width: 100%;
+}
+.avatar-img {
+  cursor: pointer;
+  width: 60px;
+  border-radius: 10px;
+  padding: 6px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+.avatar-img:active {
+  transform: scale(0.95);
+}
+.login {
+  background-color: rgb(255, 51, 0);
+  height: 30px;
+  width: 60px;
+  margin-right: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+.main {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.detailsMovie {
+  width: 100vw;
+  height: 100vh;
+  background-size: 100% 100%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 20px;
+}
+.main-details {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  z-index: 2;
+  width: 80vw;
+  font-family: overviewfont;
+}
+.title {
+  font-size: 5rem;
+  margin-bottom: -20px;
+}
+.general {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+  width: 100%;
+}
+
+.vote::before {
+  content: "⭐️ ";
+  font-size: 2rem;
+}
+.vote::after,
+.country::after,
+.relase-data::after {
+  content: " | ";
+  font-size: 2rem;
+}
+
+.overview {
+  margin-bottom: 30px;
+}
+.btn-area {
+  display: flex;
+  gap: 5vh;
+}
+.trailer-btn,
+.play-btn {
+  width: 12vw;
+  height: 5vh;
+  font-weight: bold;
+  background-color: rgb(255, 51, 0);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.trailer-btn {
+  background-color: rgba(128, 128, 128, 0.545);
+}
+
+.footer {
+  margin-top: 150px;
+  height: 180px;
+  background-color: rgb(24, 23, 23);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 10px;
+  position: absolute;
+  width: 100vw;
+  top: 100%;
+  border-top: 1px solid rgb(47, 46, 46);
+}
+
+.footer-info ul {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  list-style-type: none;
+}
+
+.logout {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  position: absolute;
+  border-radius: 4px;
+  top: 75px;
+  right: 15px;
+  width: 130px;
+  height: 70px;
+  border: 1px solid rgb(41, 41, 41);
+  background-color: rgb(24, 23, 23);
+  opacity: 0;
+  pointer-events: none;
+}
+.logout-show {
+  opacity: 1;
+  pointer-events: all;
+}
+.logout-close {
+  margin-right: 5px;
+  margin-top: 5px;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+.logout-close:active,
+.logout-action:active {
+  transform: scale(0.8);
+}
+
+.logout-action {
+  cursor: pointer;
+  margin-right: 30px;
+}
+
+.title-sec {
+  display: flex;
+  align-items: baseline;
+  gap: 15px;
+}
+.addFavSelected-img {
+  width: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 570px) {
+  .general {
+    flex-direction: column;
+    gap: 1px;
+  }
+  .vote::after,
+  .country::after,
+  .relase-data::after {
+    content: "";
+    font-size: 2rem;
+  }
+  .trailer-btn,
+  .play-btn {
+    width: 18vw;
+    height: 5vh;
+  }
+  .main-details {
+    font-size: 1rem;
+  }
+  .title {
+    font-size: 3.7rem;
+  }
+  .addFavSelected-img {
+    width: 40px;
+  }
+}
+
+@media screen and (min-width: 570px) and (max-width: 950px) {
+  .main-details {
+    font-size: 1.1rem;
+  }
+  .title {
+    font-size: 3.8rem;
+  }
+  .general {
+    flex-direction: column;
+    gap: 1px;
+  }
+  .vote::after,
+  .country::after,
+  .relase-data::after {
+    content: "";
+    font-size: 2rem;
+  }
+  .trailer-btn,
+  .play-btn {
+    width: 17vw;
+  }
+  .addFavSelected-img {
+    width: 44px;
+  }
+}
