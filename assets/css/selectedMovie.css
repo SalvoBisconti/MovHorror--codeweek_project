@@ -258,14 +258,15 @@ a {
   }
   .trailer-btn,
   .play-btn {
-    width: 18vw;
+    width: 19vw;
     height: 5vh;
+    font-size: 0.6rem;
   }
   .main-details {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
   .title {
-    font-size: 3.7rem;
+    font-size: 3rem;
   }
   .addFavSelected-img {
     width: 40px;
@@ -327,16 +328,16 @@ a {
   .play-btn {
     width: 18vw;
     height: 5vh;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
   }
 }
 
 @media screen and (min-width: 450px) and (max-width: 950px) {
   .main-details {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
   .title {
-    font-size: 3.8rem;
+    font-size: 3.1rem;
   }
   .general {
     flex-direction: column;
@@ -351,8 +352,10 @@ a {
   .trailer-btn,
   .play-btn {
     width: 17vw;
+    font-size: 0.8rem;
   }
   .addFavSelected-img {
     width: 44px;
   }
 }
+
