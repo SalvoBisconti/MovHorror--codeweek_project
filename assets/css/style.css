@@ -487,6 +487,9 @@ a {
     opacity: 0;
     pointer-events: none;
   }
+    .title-sec {
+    font-size: 1.8rem;
+  }
 }
 
 @media screen and (min-width: 450px) and (max-width: 570px) {
