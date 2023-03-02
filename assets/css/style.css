@@ -430,7 +430,7 @@ a {
   }
   .hero-infoBtn {
     width: 23vw;
-    font-size: 0.8rem;
+    font-size: 0.7rem;
   }
   .footer-info ul {
     display: flex;
@@ -487,7 +487,7 @@ a {
     opacity: 0;
     pointer-events: none;
   }
-    .title-sec {
+  .title-sec {
     font-size: 1.8rem;
   }
 }
