@@ -101,14 +101,14 @@ p {
   height: 77px;
 }
 
-@media screen and (max-width: 570px) {
+@media screen and (max-width: 449px) {
   .form {
     height: 80vh;
-    width: 80vw;
+    width: 85vw;
   }
 }
 
-@media screen and (min-width: 570px) and (max-width: 850px) {
+@media screen and (min-width: 450px) and (max-width: 850px) {
   .form {
     height: 70vh;
     width: 70vw;
