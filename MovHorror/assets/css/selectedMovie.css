@@ -238,7 +238,7 @@ a {
   opacity: 0;
   pointer-events: none;
   margin-top: 30px;
-  margin-right: -50px;
+  margin-left: -50px;
 }
 .userLogout {
   position: absolute;
