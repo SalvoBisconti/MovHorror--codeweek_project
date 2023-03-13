@@ -36,8 +36,8 @@ body {
 }
 
 .form {
-  height: 50vh;
-  width: 15vw;
+  height: 70vh;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
