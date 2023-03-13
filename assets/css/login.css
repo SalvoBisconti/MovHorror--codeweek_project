@@ -101,7 +101,7 @@ p {
   height: 77px;
 }
 
-@media screen and (max-width: 4490px) {
+@media screen and (max-width: 449px) {
   .form {
     height: 80vh;
     width: 85vw;
